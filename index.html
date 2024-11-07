@@ -9,7 +9,7 @@
 
             <div id="flex">
                 <aside id="leftSidebar" style="margin-right: 10px;">
-                    <h2>Hellie V L</h2>
+                    <h2>Hellie L</h2>
                     <div class="box">
                         <p> Photographer and darkroom printer based in the Connecticut River Valley</p>
                       
@@ -101,7 +101,7 @@
     the other elements, you will need to move that div outside
     of the container */
             #container {
-                max-width: 900px;
+                max-width: 1200px;
                 /* this is the width of your layout! */
                 /* if you change the above value, scroll to the bottom
       and change the media query according to the comment! */
@@ -158,15 +158,12 @@
                 display: flex;
             }
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
+            /* this colors BOTH sidebars*/
             aside {
                 background-color: #f3f3f3;
                 width: 200px;
                 padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
+
             }
 
 
@@ -256,7 +253,7 @@
     "max-width" value below
     */
 
-            @media only screen and (max-width: 800px) {
+            @media only screen and (max-width: 1100px) {
                 #flex {
                     flex-wrap: wrap;
                 }
