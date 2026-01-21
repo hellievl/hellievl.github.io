@@ -20,17 +20,17 @@
                    	<p>helenalamb(at)protonmail.com</p>
 			<p><a href="https://helenas.site/photography">Recent Work</a></p>
 			<p><a href="https://helenas.site/readinglist">Books I'm Reading</a></p>
-			<p><a href="https://readeasel.com">EASEL</a></p>
+			<p><a href="https://www.readeasel.com">EASEL</a></p>
 			<p><a href="https://helenas.site/webring">Webring</a></p>
                 </aside>
                 <main>
                
 
 <div class="ezgallery montage">
-<a href="hl01.jpg"><img src="hl01_thumb" alt=""></a>
-<a href="hl02.jpg"><img src="hl02_thumb" alt=""></a>
-<a href="hl03.jpg"><img src="hl03_thumb" alt=""></a>
-<a href="hl04.jpg"><img src="hl04_thumb" alt=""></a>
+<a href="hl01.jpg"><img src="hl01.jpg" alt=""></a>
+<a href="hl02.jpg"><img src="hl02.jpg" alt=""></a>
+<a href="hl03.jpg"><img src="hl03.jpg" alt=""></a>
+<a href="hl04.jpg"><img src="hl04.jpg" alt=""></a>
 </div>
 
           </main>
@@ -44,21 +44,54 @@
 
         <!-- THIS IS THE CSS !-->
         <style>
-            /* user styles */
-
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
+          
             :root {
                
                 /* colors */
                 --content: #f3f3f3;
             }
 
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
 
+.ezgallery.montage { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.ezgallery.horizontal { 
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  object-position: bottom;
+}
             body {
           
                 margin: 0;
@@ -204,49 +237,6 @@
             }
 
             /* CSS for extras */
-
-/***
-EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
-Released under the Unlicense - https://unlicense.org/
-***/
-
-.ezgallery.montage { 
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.ezgallery.montage img {
-  flex: auto;
-  margin: 0 5px 5px 0;
-  object-fit: contain;
-  object-position: bottom;
-}
-
-.ezgallery.horizontal { 
-  display: grid;
-  grid-gap: 5px;
-  gap: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.ezgallery.horizontal a {
-  text-align: center;
-}
-
-.ezgallery.horizontal img {
-  text-align: center;
-  vertical-align: middle;
-  margin: 0 5px 5px 0;
-  max-width: 100px;
-  max-height: 100px;
-  object-fit: contain;
-  object-position: bottom;
-}
-
 
             #topBar {
                 width: 100%;
